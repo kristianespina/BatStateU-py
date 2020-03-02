@@ -42,7 +42,7 @@ def main():
     srcode = input("Enter your SR Code: ")
     freshman_year = int(input("Enter your freshman year: "))
     senior_year = int(input("Enter your senior year: "))
-    grades_url = fetch_urls('14-56409', 2014, 2019)
+    grades_url = fetch_urls(srcode, freshman_year, senior_year)
     grades = fetch_grades(grades_url)
     determine_gwa(grades)
 
